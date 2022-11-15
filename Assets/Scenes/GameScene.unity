@@ -174,20 +174,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59694786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1143104362}
-  m_RootOrder: 0
-=======
   m_LocalPosition: {x: 22.49, y: -5.05, z: -5.967446}
   m_LocalScale: {x: 5, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &60672993
 GameObject:
@@ -388,10 +380,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-<<<<<<< Updated upstream
-=======
   m_ConstrainProportionsScale: 0
->>>>>>> Stashed changes
   m_Children:
   - {fileID: 1216222839}
   - {fileID: 829898992}
@@ -952,8 +941,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< Updated upstream
-=======
 --- !u!1 &929174731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1017,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929174731}
   m_CullTransparentMesh: 1
->>>>>>> Stashed changes
 --- !u!1 &970181829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,11 +1249,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-<<<<<<< Updated upstream
-  - {fileID: 40716057}
-=======
   - {fileID: 929174732}
->>>>>>> Stashed changes
   - {fileID: 160689179}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1538,8 +1520,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563198677}
   m_CullTransparentMesh: 1
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1606875181
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,7 +3932,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
->>>>>>> Stashed changes
 --- !u!1 &2118513718
 GameObject:
   m_ObjectHideFlags: 0
