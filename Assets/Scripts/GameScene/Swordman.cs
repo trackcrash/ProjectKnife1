@@ -32,11 +32,11 @@ public class Swordman : PlayerController
     {
         while (true)
         {
-            if (Stamina > 0)
+            if (Stamina > 0 && isBulletTime)
             {
                 Stamina--;
                 Time.timeScale = 0.3f;
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.3f);
             }
             else
             {
@@ -62,6 +62,12 @@ public class Swordman : PlayerController
         {
             isBulletTime = true;
             StartCoroutine(BulletTime());
+        }
+        else if (Input.GetKey(KeyCode.C))
+        {
+            Time.timeScale = 1f;
+            isBulletTime = false;
+            StopCoroutine(BulletTime());
         }
         
     }
