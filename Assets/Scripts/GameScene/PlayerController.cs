@@ -30,7 +30,7 @@ public abstract class PlayerController :MonoBehaviour
 
         if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
-            if (Input.GetKey(KeyCode.Mouse0))
+            if (Input.GetKey(KeyCode.K))
             {
                 m_Anim.Play("Attack");
             }
@@ -141,9 +141,10 @@ public abstract class PlayerController :MonoBehaviour
         }
     }
 
-
-
     protected abstract void LandingEvent();
+
+
+
 
 
 }

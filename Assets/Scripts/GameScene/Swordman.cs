@@ -95,7 +95,7 @@ public class Swordman : PlayerController
 
 
         // sit나 die일때 애니메이션이 돌때는 다른 애니메이션이 되지 않게 한다. 
-        if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Sit") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+        if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Sit") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Die") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Roll"))
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -108,6 +108,7 @@ public class Swordman : PlayerController
             return;
         }
 
+        
 
         m_MoveX = Input.GetAxis("Horizontal");
 
@@ -139,7 +140,9 @@ public class Swordman : PlayerController
 
             }
         }
-
+        if(Input.GetKey(KeyCode.L)){
+            m_Anim.Play("Roll");
+        }
 
         if (Input.GetKey(KeyCode.Alpha1))
         {
@@ -255,9 +258,6 @@ public class Swordman : PlayerController
             m_Anim.Play("Idle");
 
     }
-
-
-
 
 
 }
