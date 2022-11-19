@@ -142,6 +142,7 @@ public class Swordman : PlayerController
         }
         if(Input.GetKey(KeyCode.L)){
             m_Anim.Play("Roll");
+            transform.transform.Translate(Vector2.right* 5 * MoveSpeed * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.Alpha1))
