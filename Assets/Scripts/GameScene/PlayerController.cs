@@ -5,7 +5,9 @@ using UnityEngine;
 
 public abstract class PlayerController :MonoBehaviour
 {
+    public bool isAttack = false;
     public bool IsSit = false;
+    public bool isRoll = false;
     public int currentJumpCount = 0; 
     public bool isGrounded = false;
     public bool OnceJumpRayCheck = false;

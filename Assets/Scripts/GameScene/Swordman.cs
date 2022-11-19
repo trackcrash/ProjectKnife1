@@ -6,6 +6,7 @@ public class Swordman : PlayerController
 {
     bool isBulletTime = false;
     
+    
     private void Start()
     {
 
@@ -76,7 +77,7 @@ public class Swordman : PlayerController
     //키인풋
     public void checkInput()
     {
-
+        // 앉기 (필요할 때마다 누르는 놈)
         if (Input.GetKeyDown(KeyCode.S))  //아래 버튼 눌렀을때. 
         {
 
@@ -93,7 +94,7 @@ public class Swordman : PlayerController
 
         }
 
-
+        
         // sit나 die일때 애니메이션이 돌때는 다른 애니메이션이 되지 않게 한다. 
         if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Sit") || m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Die"))
         {
@@ -116,11 +117,15 @@ public class Swordman : PlayerController
         GroundCheckUpdate();
 
 
-        if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+        if (!m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") && !m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Roll"))
         {
             if (Input.GetKey(KeyCode.K))
             {
                 m_Anim.Play("Attack");
+            }
+            else if (Input.GetKey(KeyCode.L))
+            {
+                m_Anim.Play("Roll");
             }
             else
             {
@@ -129,16 +134,15 @@ public class Swordman : PlayerController
                 {
                     if (!OnceJumpRayCheck)
                         m_Anim.Play("Idle");
-
                 }
                 else
                 {
-
                     m_Anim.Play("Run");
                 }
-
             }
         }
+
+
 
 
         if (Input.GetKey(KeyCode.Alpha1))
@@ -146,6 +150,8 @@ public class Swordman : PlayerController
             m_Anim.Play("Die");
 
         }
+
+
 
         // 기타 이동 인풋.
 
